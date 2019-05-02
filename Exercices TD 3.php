@@ -93,6 +93,7 @@
 		<?php
 			$nombrechoisi = rand(0,100);
 		?>
+		<form>
 			<p>Nombre: <input type="text" name="nombre"></p>
 			<p><input type="submit" name="Enregistrer"></p>
 		</form>
