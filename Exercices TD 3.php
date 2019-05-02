@@ -90,11 +90,13 @@
 
 <!-- Petit jeu -->
 <form action="index.php" method="POST">
+		<?php
+			$nombrechoisi = rand(0,100);
+		?>
 			<p>Nombre: <input type="text" name="nombre"></p>
 			<p><input type="submit" name="Enregistrer"></p>
 		</form>
 		<?php 
-			$nombrechoisi = rand(0,100);
 			$nombre = $_POST['nombre'];
 
 			if ($nombre != $nombrechoisi) {
