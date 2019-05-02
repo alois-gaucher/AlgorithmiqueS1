@@ -1,3 +1,21 @@
+<!-- Nom prénom age -->
+<!-- HTML -->
+<form action="traitement.php" method="GET">
+			<p>Nom: <input type="text" name="nom"></p>
+			<p>Prénom: <input type="text" name="prenom"></p>
+			<p>Age: <input type="text" name="age"></p>
+			<p><input type="submit" name="Enregistrer"></p>
+</form>
+
+<!-- PHP -->
+<?php 
+			$nom = $_GET['nom'];
+			$prenom = $_GET['prenom'];
+			$age = $_GET['age'];
+
+			echo 'Vous êtes '.$prenom.' '.$nom.', vous avez '.$age.' ans';			
+?>
+
 <!-- Calculatrice -->
 <!-- HTML -->
 <form action="traitement.php" method="POST">
