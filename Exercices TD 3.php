@@ -1,4 +1,4 @@
-<!-- Nom prénom age -->
+<!-- Nom prénom age (GET) -->
 <!-- HTML -->
 <form action="traitement.php" method="GET">
 			<p>Nom: <input type="text" name="nom"></p>
@@ -86,4 +86,27 @@
 			}
 			echo '</td>';
 			echo '</table>';
+		 ?>
+
+<!-- Petit jeu -->
+<form action="index.php" method="POST">
+			<p>Nombre: <input type="text" name="nombre"></p>
+			<p><input type="submit" name="Enregistrer"></p>
+		</form>
+		<?php 
+			$nombrechoisi = rand(0,100);
+			$nombre = $_POST['nombre'];
+
+			if ($nombre != $nombrechoisi) {
+				if ($nombre < $nombrechoisi) {
+					echo 'Trop petit!</br>';
+				}
+				elseif ($nombre > $nombrechoisi) {
+					echo 'Trop grand!</br>';
+				}
+				elseif ($nombre == $nombrechoisi) {
+					echo 'C\'est gagné</br>';
+				}
+			}
+			
 		 ?>
