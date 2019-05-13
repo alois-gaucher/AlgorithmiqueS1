@@ -35,7 +35,7 @@
 	?>
 
 <!-- Exercice 3 -->
-<form action="index.php" method="post">
+	<form action="index.php" method="post">
 	<?php
 	/* Couleurs */
 	$tCouleur = ['Bleu', 'Rouge', 'Jaune', 'Cyan', 'Noir', 'Gris', 'Vert', 'Marron'];
