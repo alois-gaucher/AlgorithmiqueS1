@@ -33,3 +33,30 @@
 			}
 		echo "</table>";
 	?>
+
+<!-- Exercice 3 -->
+<form action="index.php" method="post">
+	<?php
+	/* Couleurs */
+	$tCouleur = ['Bleu', 'Rouge', 'Jaune', 'Cyan', 'Noir', 'Gris', 'Vert', 'Marron'];
+	echo '<p>';
+		for($i = 0; $i < count($tCouleur); $i++)
+		{
+			echo '<input type="checkbox" name="couleur[]" value="'.$tCouleur[$i].'">';
+			echo $tCouleur[$i];
+			echo '</br>';
+		}
+	echo '</p>';
+	echo '<input type="submit" value="Envoyer"/>';
+	echo '</br>';
+	echo '<p>';
+	foreach($_POST['couleur'] as $valeur)
+	{
+	   echo "Vous aimez la couleur $valeur</br>";
+	}
+	if(!$_POST['couleur']){
+   	echo "Aucune checkbox n'a été cochée";
+	}
+	echo '</p>';
+	?>
+	</form>
