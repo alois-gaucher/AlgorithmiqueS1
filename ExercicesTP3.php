@@ -21,3 +21,23 @@
 			$annee = $_POST['annee'];
 			echo 'Vous êtes '.$prenom.' '.$nom.', vous êtes en '.$annee.'';			
 ?>
+
+<!-- Exercice 2 -->
+<!-- PHP -->
+<?php 
+
+	$tableau = [];
+	for($i = 0; $i < 20; $i++)
+		{
+			$tableau[$i] = rand(1,50);
+			echo $tableau[$i].' ';
+			echo '</br>';
+		}
+		$tableau[21] = min($tableau);
+		echo 'Minimum: '.$tableau[21].'</br>';
+		$tableau[22] = max($tableau);
+		echo 'Maximum: '.$tableau[22].'</br>';
+		$tableau[23] = array_sum($tableau)/count($tableau);
+		echo 'Moyenne: '.$tableau[23].'</br>';
+
+?>
