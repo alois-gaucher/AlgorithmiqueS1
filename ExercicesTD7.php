@@ -23,3 +23,21 @@
 	$m = moyenne(4, 2); 
 	echo 'La moyenne est de ' . $m;
 ?>
+
+<!-- Exercice 3 -->
+	<?php
+		$tableau = [1, 2, 3, 4, 5, 8, 37, 261, 363];
+		function tableau($tableau) 
+		{ 
+		    echo "<table border=2px><tr>";
+			for($i = 0; $i < count($tableau); $i++)
+				{
+					echo '<ul>';
+					echo '<li>'.$tableau[$i].'</li>';
+					echo '</ul>';
+				}
+		} 
+
+		/*Appel de ma fonction*/
+		tableau($tableau);
+	?>
