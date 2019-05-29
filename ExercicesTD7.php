@@ -15,7 +15,7 @@
 <?php 
 	function moyenne($nombre1, $nombre2) 
 	{ 
-		$moyenne = $nombre1 + $nombre2 / 2; 
+		$moyenne = ($nombre1 + $nombre2) / 2; 
 		return $moyenne; 
 	} 
 
