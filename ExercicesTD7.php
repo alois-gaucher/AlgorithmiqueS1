@@ -29,13 +29,14 @@
 		$tableau = [1, 2, 3, 4, 5, 8, 37, 261, 363];
 		function tableau($tableau) 
 		{ 
-		    echo "<table border=2px><tr>";
+		    echo "<table border=1px><tr>";
 			for($i = 0; $i < count($tableau); $i++)
 				{
-					echo '<ul>';
-					echo '<li>'.$tableau[$i].'</li>';
-					echo '</ul>';
+					echo '<tr>';
+					echo '<td>'.$tableau[$i].'</td>';
+					echo '</tr>';
 				}
+			echo "</table>";
 		} 
 
 		/*Appel de ma fonction*/
