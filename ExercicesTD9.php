@@ -57,7 +57,12 @@
 
 <!-- Exercice 3 -->
 <!-- HTML -->
-<form action="index.php" method="GET">
+	<form action="index.php" method="GET">
+		<style type="text/css">
+			label {
+				text-align: right;
+			}
+		</style>
 	<div>
 	    <label for="nom">Nom: </label><input type="text" name="Nom" id="nom"/>
 	</div>
@@ -71,7 +76,7 @@
 	    <label for="telephone">Téléphone: </label><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
 	</div>
 	<div>
-	    <label for="adresse">Adresse: </label><input type="text" name="adresse" id="adresse"/>
+	    <label for="adresse">Numéro: </label><input type="text" name="numero" id="adresse"/><label for="adresse">Rue: </label><input type="text" name="rue" id="adresse"/><label for="adresse">Adresse: </label><input type="text" name="adresse" id="adresse"/><label for="adresse">Code postal: </label><input type="text" name="cp" id="adresse"/><label for="adresse">Ville: </label><input type="text" name="ville" id="adresse"/>
 	</div>
 	<div>
 		</br>
