@@ -96,3 +96,21 @@
 				}
 		}
  ?>
+
+<!-- Exercice 5 -->
+<!-- PHP -->
+<!-- Nécéssite Bootstrap
+https://getbootstrap.com/docs/4.3/getting-started/download/#bootstrapcdn
+-->
+<?php
+		function ecritChamps($id,$libelle,$name) {
+				{
+					echo '<form>';
+					echo '<div class="form-group">';
+					echo '<label for="'.$id.'">'.$libelle.': </label>';
+					echo '<input type="text" name="'.$name.'" class="form-control" id="'.$id.'"/>';
+					echo '</div>';
+					echo '</form>';
+				}
+		}
+ ?>
