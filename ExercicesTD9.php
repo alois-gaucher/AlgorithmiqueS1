@@ -114,3 +114,60 @@ https://getbootstrap.com/docs/4.3/getting-started/download/#bootstrapcdn
 				}
 		}
  ?>
+
+<!-- Exercice 6 -->
+<!-- PHP -->
+<!-- Nécéssite Bootstrap
+https://getbootstrap.com/docs/4.3/getting-started/download/#bootstrapcdn
+-->
+<?php
+		/* Fonction écriture champ de texte */
+		function ecritTextarea($id,$libelle,$name) {
+				{
+					echo '<form>';
+					echo '<div class="form-group">';
+					echo '<label for="'.$id.'">'.$libelle.': </label>';
+					echo '<input type="text" name="'.$name.'" class="form-control" id="'.$id.'"/>';
+					echo '</div>';
+					echo '</form>';
+				}
+		}
+
+		/* Fonction écriture mot de passe */
+		function ecritPassword($id,$libelle,$name) {
+				{
+					echo '<form>';
+					echo '<div class="form-group">';
+					echo '<label for="'.$id.'">'.$libelle.': </label>';
+					echo '<input type="password" name="'.$name.'" class="form-control" id="'.$id.'"/>';
+					echo '</div>';
+					echo '</form>';
+				}
+		}
+
+		/* Fonction écriture mail */
+		function ecritMail($id,$libelle,$name) {
+				{
+					echo '<form>';
+					echo '<div class="form-group">';
+					echo '<label for="'.$id.'">'.$libelle.': </label>';
+					echo '<input type="mail" name="'.$name.'" class="form-control" id="'.$id.'"/>';
+					echo '</div>';
+					echo '</form>';
+				}
+		}
+
+		/* Fonction écriture select */
+		function ecritSelect($id,$libelle,$name,$option1) {
+				{
+					echo '<form>';
+					echo '<div class="form-group">';
+					echo '<label for="'.$id.'">'.$libelle.': </label>';
+					echo '<select name="'.$name.'" class="form-control" id="'.$id.'"/>';
+					echo '<option>'.$option1.'</option>';
+					echo '</div>';
+					echo '</form>';
+				}
+		}
+
+ ?>
