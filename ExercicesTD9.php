@@ -164,13 +164,11 @@ https://getbootstrap.com/docs/4.3/getting-started/download/#bootstrapcdn
 					echo '<div class="form-group">';
 					echo '<label for="'.$id.'">'.$libelle.': </label>';
 					echo '<select name="'.$name.'" class="form-control" id="'.$id.'">';
-					for($i = 0; $i < count($options); $i++)
-						{
-							echo '<option>'.$options[i].'</option>';
-						}
-					echo '</select>';
-					echo '</div>';
-					echo '</form>';
+						for($i = 0; $i < count($options); $i++)
+							{
+								echo '<option>'.$options[i].'</option>';
+							}
+					echo '</select></div></form>';
 				}
 		}
  ?>
