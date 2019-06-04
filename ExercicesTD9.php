@@ -92,6 +92,7 @@
 					echo '<div class="form">';
 					echo '<label for="'.$id.'">'.$libelle.': </label>';
 					echo '<input type="text" name="'.$name.'" id="'.$id.'"/>';
+					echo '</div></br>';
 				}
 		}
-?>
+ ?>
