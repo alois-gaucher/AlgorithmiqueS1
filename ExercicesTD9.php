@@ -172,3 +172,15 @@ https://getbootstrap.com/docs/4.3/getting-started/download/#bootstrapcdn
 				}
 		}
  ?>
+
+<!-- Exercice supplémentaire 1 -->
+<?php
+		/* Calcul du prix TTC en fonction du prix HT */
+		function prixTTC($prixht) {
+				{
+					echo 'Le prix HT est: '.$prixht.'€</br>';
+					$prixttc = $prixht * 1.20;
+					echo 'Le prix TTC est: '.$prixttc.'€</br>';
+				}
+		}
+ ?>
