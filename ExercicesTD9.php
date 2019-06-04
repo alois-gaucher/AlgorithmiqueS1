@@ -127,7 +127,7 @@ https://getbootstrap.com/docs/4.3/getting-started/download/#bootstrapcdn
 					echo '<form>';
 					echo '<div class="form-group">';
 					echo '<label for="'.$id.'">'.$libelle.': </label>';
-					echo '<input type="text" name="'.$name.'" class="form-control" id="'.$id.'"/>';
+					echo '<textarea class="form-control" name="'.$name.'" id="'.$id.'"></textarea>';
 					echo '</div>';
 					echo '</form>';
 				}
@@ -158,16 +158,19 @@ https://getbootstrap.com/docs/4.3/getting-started/download/#bootstrapcdn
 		}
 
 		/* Fonction écriture select */
-		function ecritSelect($id,$libelle,$name,$option1) {
+		function ecritSelect($id,$libelle,$name,$options) {
 				{
 					echo '<form>';
 					echo '<div class="form-group">';
 					echo '<label for="'.$id.'">'.$libelle.': </label>';
-					echo '<select name="'.$name.'" class="form-control" id="'.$id.'"/>';
-					echo '<option>'.$option1.'</option>';
+					echo '<select name="'.$name.'" class="form-control" id="'.$id.'">';
+					for($i = 0; $i < count($options); $i++)
+						{
+							echo '<option>'.$options[i].'</option>';
+						}
+					echo '</select>';
 					echo '</div>';
 					echo '</form>';
 				}
 		}
-
  ?>
