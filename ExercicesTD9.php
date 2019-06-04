@@ -83,3 +83,15 @@
 		<input type="submit" name="envoyer">
 	</div>
 	</form>
+
+<!-- Exercice 4 -->
+<!-- PHP -->
+<?php
+		function ecritChamps($id,$libelle,$name) {
+				{
+					echo '<div class="form">';
+					echo '<label for="'.$id.'">'.$libelle.': </label>';
+					echo '<input type="text" name="'.$name.'" id="'.$id.'"/>';
+				}
+		}
+?>
