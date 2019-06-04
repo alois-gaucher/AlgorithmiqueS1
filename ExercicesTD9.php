@@ -1,4 +1,4 @@
-<!-- Exercice 2 -->
+<!-- Exercice 1 -->
 <!-- PHP -->
 	<?php
 		$tableau = [1, 2, 3, 4, 5, 8, 37, 261, 363];
