@@ -166,7 +166,7 @@ https://getbootstrap.com/docs/4.3/getting-started/download/#bootstrapcdn
 					echo '<select name="'.$name.'" class="form-control" id="'.$id.'">';
 						for($i = 0; $i < count($options); $i++)
 							{
-								echo '<option>'.$options[i].'</option>';
+								echo '<option>'.$options[$i].'</option>';
 							}
 					echo '</select></div></form>';
 				}
