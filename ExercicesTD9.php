@@ -51,7 +51,30 @@
 	    <input type="text" name="adresse" id="adresse" />
 	</div>
 	<div>
-		<label>Envoyer</label></br>
+		<input type="submit" name="envoyer">
+	</div>
+	</form>
+
+<!-- Exercice 3 -->
+<!-- HTML -->
+<form action="index.php" method="GET">
+	<div>
+	    <label for="nom">Nom: </label><input type="text" name="Nom" id="nom"/>
+	</div>
+	<div>
+	    <label for="prenom">Prénom: </label><input type="text" name="Prenom" id="prenom"/>
+	</div>
+	<div>
+	    <label for="datenaissance">Date de naissance: </label><input type="date" name="datenaissance" id="datenaissance">
+	</div>
+	<div>
+	    <label for="telephone">Téléphone: </label><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+	</div>
+	<div>
+	    <label for="adresse">Adresse: </label><input type="text" name="adresse" id="adresse"/>
+	</div>
+	<div>
+		</br>
 		<input type="submit" name="envoyer">
 	</div>
 	</form>
